@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.contianer {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.cart {
+  width: 20%;
+  border-radius: 10px;
+  padding: 0px 10px;
+  margin: 0px 5px;
+  border: 1px solid rgba(128, 128, 128, 0.339);
+}
+.cart img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}

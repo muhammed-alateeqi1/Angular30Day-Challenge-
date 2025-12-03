@@ -1,0 +1,9 @@
+
+
+@for (n of numbers; track $index) {
+<li>{{ n }}</li>
+} @empty {
+<li>There are no items.</li>
+}
+
+<button (click)="changeNumbers()">Update Numbers</button>
