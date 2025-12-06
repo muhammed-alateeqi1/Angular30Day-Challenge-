@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+}
 .center {
   display: flex;
   justify-content: center;
@@ -35,4 +39,22 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+
+.fw{
+    width: 100%;
+}
+.flex{
+  display: flex;
+}
+.jc-sp{
+  justify-content: space-between;
+}
+.jc-c{
+  justify-content: center;
+}
+body{
+  font-family: "Fira Sans", sans-serif;
+  
 }

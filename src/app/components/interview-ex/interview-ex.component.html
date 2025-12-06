@@ -1,0 +1,35 @@
+<nav>
+    <ul>
+        <li>
+            <a href="#">Omar</a>
+        </li>
+        <li>
+            <a href="#">ali</a>
+        </li>
+        <li>
+            <a href="#">Assmaa</a>
+        </li>
+        <li>
+            <a href="#">Ymona</a>
+        </li>
+        <li> 
+            <a href="#">Shimaa</a>
+        </li>
+    </ul>
+</nav>
+
+
+    <input type="text" [(ngModel)]="userInput">
+    <button (click)="getTheValues()">Add item</button>
+    <button (click)="DelFun()">Delete</button>
+<!-- <h1>listItem : {{listItem}}</h1> -->
+<h1>listItem : {{newList}}</h1>
+
+<div class="form-container" >
+    <input placeholder="Username" type="text" [(ngModel)]="userName">
+    <button class="login-btn" (click)="getUserName()">login</button>
+</div>
+<h1 style="text-align: center; margin: 20px 0px;">{{displayUserName}}</h1>
+
+
+<div style="background-color: brown; width: 200px; height: 200px;" *ngIf="isVisable" (click)="hideColor()"></div>
