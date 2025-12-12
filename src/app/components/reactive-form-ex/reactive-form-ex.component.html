@@ -1,25 +1,39 @@
 <section class="login-sec">
-  <form class="login-form">
+  <form class="login-form" [formGroup]="loginForm" (ngSubmit)="submitForm()">
     <div class="up">
       <h1>HELLO & WELCOME</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        praesentium libero vero sunt veritatis deleniti possimus
-        animi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. praesentium
+        libero vero sunt veritatis deleniti possimus animi.
       </p>
     </div>
-    <div class="login-box ">
+    <div class="login-box">
       <h2>USER lOGIN</h2>
-      <input type="text" class="text-input" placeholder="Username" />
-      <input type="text" class="text-input" placeholder="Password" />
+      <input type="email" class="text-input" formControlName="email" placeholder="Username"/>
+      @if(loginForm.controls.email.errors?.['required'] && loginForm.controls.email.touched){
+      <div class="err"><p>Oops! Email is required</p></div>
+      }@else if(loginForm.controls.email.errors?.['email'] && loginForm.controls.email.touched){
+       <div class="err"><p>Email must contain &#64;</p></div>
+      }
+      <input type="password" class="text-input" formControlName="password" placeholder="Password"/>
+      @if(loginForm.controls.password.errors?.['required'] && loginForm.controls.password.touched){
+       <div class="err"><p>Password is Required</p></div>
+      }
+      @if(loginForm.controls.password.errors?.['pattern'] && loginForm.controls.password.touched){
+      <div class="err">
+        <p>
+             Password must be at least 8 characters and contain letters and numbers.
+        </p>
+      </div>
+      }
       <div class="check fw flex jc-sp">
         <div class="flex jc-c">
-            <input type="checkbox" style="margin: 0px 4px;" name="check"/>
-            <label for="check">Reminder</label>
+          <input type="checkbox" style="margin: 0px 4px" name="check" />
+          <label for="check">Reminder</label>
         </div>
         <p>Forgot Password ?</p>
       </div>
-      <button>LOGIN</button>
+      <button type="submit">LOGIN</button>
     </div>
   </form>
 </section>

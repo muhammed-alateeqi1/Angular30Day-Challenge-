@@ -24,6 +24,53 @@
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+
+/* Extra small devices (phones, 320px and up) */
+@media screen and (min-width: 320px) {
+  .login-form {
+    width: 95%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+  .login-form {
+    width: 85%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .login-form {
+    width: 60%;
+    max-width: 450px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .login-form {
+    width: 40%;
+    max-width: 450px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .login-form {
+    width: 30%;
+    max-width: 450px;
+  }
+}
+
+/* Ultra-wide screens (1600px and up) */
+@media screen and (min-width: 1600px) {
+  .login-form {
+    width: 25%;
+    max-width: 500px;
+  }
+}
+
 .login-form .up h1 {
   font-size: 40px;
   padding: 30px 0px;
@@ -71,18 +118,19 @@ button {
   margin: 5px 0px;
 }
 .text-input {
-  padding: 12px 0px;
+  padding: 12px 12px;
   margin: 12px 0px;
   border-radius: 20px;
   border: none;
   background-color: #c4d5e5;
 }
 .login-box button {
-  padding: 12px 0px;
+  padding: 12px 12px;
   margin: 12px 0px;
   border-radius: 20px;
   border: none;
   color: #fff;
+  transition: all ease .3s;
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
@@ -91,7 +139,20 @@ button {
     rgba(24, 108, 125, 1) 100%
   );
 }
+.login-box button:hover{
+  letter-spacing: 5px;
+}
 .text-input::placeholder {
   padding: 20px;
   color: white;
+}
+.err{
+ 	color: #D8000C;
+  background-size:contain ;
+  padding: 5px 2px;
+  width: 100%;
+}
+.err p{
+  font-size: 14px;
+  text-align: center;
 }
