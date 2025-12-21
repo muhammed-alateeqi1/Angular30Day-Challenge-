@@ -1,1 +1,35 @@
-    <h1>Component-1</h1>
+    <h1 class="center">Component-2</h1>
+
+
+<div class="center">
+    <p>{{jobTitle}}</p>
+</div>
+
+
+<button [disabled]="isDisabled" > UP Button</button>
+<button (click)="Disabled()"> Down Button</button>
+
+
+<div class="center ">
+    <button style="margin: 5px; padding: 5px; " (click)="incremnet()">+</button>
+    <p>{{counter}}</p>
+    <button style="margin: 5px; padding: 5px;" (click)="decremnet()">-</button>
+</div>
+<button (click)="Reset()">Reset</button>
+
+
+
+<input [(ngModel)]="userInput" />
+<p>Hello ! {{ userInput }}</p>
+
+        @if(isLoading){
+            <p>Loading...</p>
+        }@else{
+            @for(user of users; track user){
+                <ul>
+                    <li>{{user}}</li>
+                </ul>
+            }
+        }
+
+    

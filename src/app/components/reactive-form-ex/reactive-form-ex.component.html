@@ -17,7 +17,7 @@
       }
       <input type="password" class="text-input" formControlName="password" placeholder="Password"/>
       @if(loginForm.controls.password.errors?.['required'] && loginForm.controls.password.touched){
-       <div class="err"><p>Password is Required</p></div>
+       <div class="err"><p>Password is required</p></div>
       }
       @if(loginForm.controls.password.errors?.['pattern'] && loginForm.controls.password.touched){
       <div class="err">

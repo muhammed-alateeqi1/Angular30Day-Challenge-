@@ -14,8 +14,6 @@ export class ReactiveFormExComponent {
     password: new FormControl('',[Validators.required,Validators.minLength(6),Validators.pattern(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/)]),
   })
 
-  
-
   submitForm(){
     if(this.loginForm.valid){
       console.log("Form Data : ", this.loginForm.value);
