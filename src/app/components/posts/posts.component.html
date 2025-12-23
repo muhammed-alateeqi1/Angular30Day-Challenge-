@@ -1,0 +1,10 @@
+@if(posts$ | async; as posts){
+    @for(post of posts; track post.id){
+        <div>
+            <h4>{{post.title}}</h4>
+        </div>
+    }
+
+}@else {
+    <p>Loading...</p>
+}

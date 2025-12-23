@@ -7,11 +7,13 @@ import { InterviewExComponent } from "./components/interview-ex/interview-ex.com
 import { ProductLitComponent } from "./components/product-lit/product-lit.component";
 import { ReactiveFormExComponent } from "./components/reactive-form-ex/reactive-form-ex.component";
 import { MiniChallengeComponent } from "./components/mini-challenge/mini-challenge.component";
+import { ApiResultsComponent } from "./api-results/api-results.component";
+import { PostsComponent } from "./components/posts/posts.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, Comp1Component, Comp2Component, ChallengeComponent, InterviewExComponent, ProductLitComponent, ReactiveFormExComponent, MiniChallengeComponent],
+  imports: [RouterOutlet, Comp1Component, Comp2Component, ChallengeComponent, InterviewExComponent, ProductLitComponent, ReactiveFormExComponent, MiniChallengeComponent, ApiResultsComponent, PostsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

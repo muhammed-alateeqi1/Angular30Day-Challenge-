@@ -20,7 +20,7 @@ export class Comp2Component {
   isLoading = true;
   users = ['Ali','Muhammed','Sama']
   Disabled() {
-    this.isDisabled = true;
+    this.isDisabled = false;
   }
 
   incremnet() {
@@ -38,7 +38,7 @@ export class Comp2Component {
   Loading(){
     setInterval(() => {
         this.isLoading = false;
-    }, 2000);
+    }, 1000);
   }
 
 

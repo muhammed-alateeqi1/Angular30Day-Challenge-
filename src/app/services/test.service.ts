@@ -12,4 +12,10 @@ export class TestService {
     return this._HttpClient.get<any>(this.apiUrl);
   }
  
+  private apiUrlYummy = 'https://api.yani.tv/search?q=tokyo';
+  Yummy():Observable<any>{
+    return this._HttpClient.get<any>(this.apiUrlYummy);
+  }
+ 
+  
 }
